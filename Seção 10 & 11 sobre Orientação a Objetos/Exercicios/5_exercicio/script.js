@@ -1,8 +1,8 @@
 class ContaBancaria {
-    constructor (saldoContaCorrente, saldoContaPoupanca, jurosPoupança) {
+    constructor (saldoContaCorrente, saldoContaPoupanca, juros) {
         this.saldoContaCorrente = saldoContaCorrente;
         this.saldoContaPoupanca = saldoContaPoupanca;
-        this.jurosPoupança = jurosPoupança;
+        this.juros = juros;
     }
 
     saque (value, type) {
@@ -109,12 +109,20 @@ class ContaBancaria {
                 }
             }
     }
+
+    jurosDeAniversario(){
+        let juros = (this.saldoContaPoupanca * this.juros) / 100;
+        this.saldoContaPoupanca += juros;
+    }
 }
 
-let contaNova = new ContaBancaria(1000, 12000, 1.9);
+let contaNova = new ContaBancaria(1000, 12000, 1);
 
-class contaEspecial extends ContaBancaria{
-    constructor () {
+
+
+class ContaEspecial extends ContaBancaria{
+    constructor (saldoContaCorrente, saldoContaPoupanca, juros) {
+        super(saldoContaCorrente, saldoContaPoupanca, juros*2)
         
     }
 }
@@ -134,3 +142,11 @@ contaNova.accountMoneyTranfer("corrente", 4500);
 
 console.log(contaNova.saldoContaCorrente);
 console.log(contaNova.saldoContaPoupanca);
+
+let conta2 = new ContaEspecial(1000, 20000, 1)
+
+console.log(conta2);
+
+conta2.saque(1000, "poupanca");
+
+console.log(conta2);
