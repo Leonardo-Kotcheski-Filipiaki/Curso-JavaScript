@@ -1,0 +1,6 @@
+Encontrando elementos
+    |- Podemos encontrar elementos de uma forma mais fácil do que se movendo pelo DOM;
+    |- Como no HTML temos tags, classes e id's, o javascript nos possibilita utilizar
+    estas características para encontrar o que desejamos;
+    |- Há alguns elementos para isto: getElementByTagName, getElementById, getElementByClassName, e também o
+    querySelector;

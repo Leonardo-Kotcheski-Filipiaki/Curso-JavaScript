@@ -1,0 +1,9 @@
+Protocolos
+    |- Um protocolo é uma forma de comunicação entre computadores através da rede.
+    |- HTTP
+        |- Serve para solicitação de arquivos, imagens e etc (Hyper Text Transfers Protocol);
+        |- Conseguimos entrar em sites graças ao HTTP
+    |- SMTP
+        |- Serve para enviar E-mails
+    |- TCP
+        |- Protocolo de tranferência

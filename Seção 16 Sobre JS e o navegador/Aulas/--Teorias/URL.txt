@@ -1,0 +1,7 @@
+URL
+ |- Cada arquivo que carrega no navegador é nomeado por uma URL;
+ |- A URL (Uniform Resource Locator) pode ser dividida em três partes: protocolo, servidor e arquivo;
+ |- Exemplo de URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+ |- http = protocolo;
+ |- www.youtube.com = servidor (DNS para um IP);
+ |- index.html por exemplo seria o arquivo;
