@@ -1,0 +1,132 @@
+body{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 9vh;
+}
+
+/* Botões */
+
+#buttons-container button {
+    border: none;
+    padding: 4vh 5vh;
+    margin: 0vh 4vh;
+}
+
+
+/* Jogo */
+#container{
+    display: flex;
+    width: 20vw;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box{
+    height: 15vh;
+    border: 0.5vh solid #000;
+    box-sizing: border-box;
+    flex: 1 1 33%;
+}
+
+#block-1, #block-2, #block-3{
+    border-top: none;
+    margin-top: 2vh;
+}
+
+#block-1, #block-4, #block-7{
+    border-left: none;
+}
+
+#block-3, #block-6, #block-9{
+    border-right: none;
+}
+
+#block-7, #block-8, #block-9{
+    border-bottom: none;
+}
+
+/* Simbolos */
+
+.x{
+    font-size: 8vw;
+    color:red;
+    display: inline-block;
+    line-height: 10vh;
+}
+
+.o{
+width: 3.2vw;
+height: 3.2vw;
+border: 1.5vh solid green;
+border-radius: 50%;
+display: inline-block;
+margin-top: 2vh;
+
+}
+
+/* classe de esconder */
+
+.hide{
+    display: none !important;
+} 
+
+/* Placar */
+#scoreboard-container{
+    font-weight: bold;
+    margin-top: 4vh;
+    font-size: 4vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.score-box{
+    margin:0 5vh;
+}
+
+#x-scoreboard{
+    color: red;
+    margin-right: 0.5px;
+}
+
+#o-scoreboard{
+    display: inline-block;
+    width: 2.5vh;
+    height: 2.5vh;
+    border: 0.5vh solid green;
+    border-radius: 50%;
+    margin-right: 0.5px;
+}
+
+/* Mensagem de vitoria */
+
+#message p{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 15vw;
+    width: 30vw;
+    font-size: 6vh;
+    background-color: #000;
+    color: #fff;
+    padding: 4vh;
+    opacity: 75%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 412px) {
+    #buttons-container button {
+        border: none;
+        padding: 4vh 5vh;
+        margin-top: 3vh;
+    }
+    
+}
